@@ -160,6 +160,9 @@ button.social-signin.twitter {
 button.social-signin.google {
   background: #DD4B39;
 }
+button.social-signin.QQ {
+  background: #491217;
+}
 .bottomright {
   position: absolute;
   bottom: 8px;

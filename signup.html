@@ -24,15 +24,24 @@
         <input type="text" name="username" placeholder="Username" />
         <input type="text" name="email" placeholder="E-mail" />
         <input type="password" name="password" placeholder="Password" />
-        <input type="password" name="password2" placeholder="Retype password" />
-        <select class="myselect" multiple="multiple" style="width:500px;">
-            <option>Laravel</option>
-            <option>Laravel ACL</option>
-            <option>Laravel PDF</option>
-            <option>Laravel Helper</option>
-            <option>Laravel API</option>
-            <option>Laravel CRUD</option>
-            <option>Laravel Angural JS Crud</option>
+
+        <select class="myselect"  data-placeholder="Education">
+            <option>SMU</option>
+            <option>Other Universities</option>
+            <option>JC</option>
+            <option>Polytechnic</option>
+            <option>International School</option>
+
+        </select>
+        <br/>
+        <select class="myselect" multiple="multiple" style="width:525px;" data-placeholder = "Your Skills">
+            <option>Python</option>
+            <option>Consulting</option>
+            <option>Management</option>
+            <option>Java</option>
+            <option>CPA</option>
+            <option>Leadership</option>
+            <option>Socialogical frameworks</option>
             <option>C++</option>
         </select>
         <input type="submit" name="signup_submit" value="Sign me up" />
@@ -42,8 +51,9 @@
         <span class="loginwith">Sign in with<br />social network</span>
 
         <button class="social-signin facebook">Log in with facebook</button>
-        <button class="social-signin twitter">Log in with Twitter</button>
+
         <button class="social-signin google">Log in with Google+</button>
+
     </div>
     <div class = "bottomright"><a href = "userhome.html">Skip</a></div>
     <div class="or">OR</div>
