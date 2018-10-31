@@ -45,9 +45,7 @@
 .wrap{
 	width: 100%;
 	position: relative;
-	top: 0%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+
 }
 
 	body {
@@ -252,6 +250,7 @@
 	input[type="password"],
 	input[type="email"],
 	select,
+
 	textarea {
 		-moz-appearance: none;
 		-webkit-appearance: none;
@@ -269,6 +268,7 @@
 		text-decoration: none;
 		width: 100%;
 	}
+
 
 		input[type="text"]:invalid,
 		input[type="password"]:invalid,
