@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Title</title>
+    <script type="text/javascript">
+        function goToNewPage()
+        {
+            var url = document.getElementById('list').value;
+            if(url != 'none') {
+                window.location = url;
+            }
+        }
+    </script>
+</head>
+<body>
+
+<form>
+    <select name="list" id="list" accesskey="target" onchange="goToNewPage()">
+        <option value='none' selected>Choose a theme</option>
+        <option value="../userhome.html">Theme 1</option>
+        <option value="../TrackSpecificSkills.html">Theme 2</option>
+        <option value="../upload.html">Theme 3</option>
+    </select>
+    <!--
+    <input type=button value="Go" onclick="goToNewPage()" />
+    -->
+</form>
+
+</body>
+</html>
