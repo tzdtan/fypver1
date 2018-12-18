@@ -1,0 +1,34 @@
+{
+  "name": "Core Courses",
+  "children": [{
+    "name": "Data Management",
+    "children": [{
+      "name": "ER model",
+      "size": 3489
+    }, {
+      "name": "relational database",
+      "size": 1234
+
+    },{
+      "name": "data normalisation",
+      "size": 1175
+    }]
+    },
+    {
+      "name": "Information System & innovations",
+      "children": [{
+        "name": "Process diagram",
+        "size": 3489
+      },{
+        "name": "business process information",
+        "size": 348
+      }
+
+      ]
+    }
+    ]}
+
+
+
+
+
