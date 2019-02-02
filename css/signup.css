@@ -50,6 +50,7 @@ body::before {
   background: #061b3d;
   border-radius: 2px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  border-radius: 25px;
 }
 
 .left {

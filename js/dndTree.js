@@ -26,8 +26,12 @@ NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.*/
 
 
+
 // Get JSON data
-treeJSON = d3.json("../data/corecourse.json", function(error, treeData) {
+d3.json("", function(error, treeData) {
+var treeData = {"name":"Financial technology","children":[{"name":"Retail Banking & Mobile Technology","children":[{"name":"Emerging FinTech trends","size":1253},{"name":"Retail banking","size":1448},{"name":"Channels","size":1150}]},{"name":"Financial Markets","children":[{"name":"Financial Market Products","size":1695},{"name":"Trade Lifecycle","size":1509},{"name":"Trading Strategies","size":1970}]},{"name":"Digital Payments & Innovation","children":[{"name":"Payment Instruments","size":1599},{"name":"Credit Card Networks","size":1101},{"name":"Clearing and Settlement","size":1376}]},{"name":"Digital Banking Enterprise Architecture #","children":[{"name":"Enterprise Architecture","size":1520},{"name":"Service Oriented Architecture","size":1307},{"name":"Business Process Management","size":1912}]},{"name":"Corporate Banking & Smart Contracts","children":[{"name":"Corporate banking","size":1181},{"name":"Smart contracts","size":1047},{"name":"Blockchain","size":1645}]}]};
+//treeJSON = function(error, treeData) {
+    var treeData = {"name":"Financial technology","children":[{"name":"Retail Banking & Mobile Technology","children":[{"name":"Emerging FinTech trends","size":1253},{"name":"Retail banking","size":1448},{"name":"Channels","size":1150}]},{"name":"Financial Markets","children":[{"name":"Financial Market Products","size":1695},{"name":"Trade Lifecycle","size":1509},{"name":"Trading Strategies","size":1970}]},{"name":"Digital Payments & Innovation","children":[{"name":"Payment Instruments","size":1599},{"name":"Credit Card Networks","size":1101},{"name":"Clearing and Settlement","size":1376}]},{"name":"Digital Banking Enterprise Architecture #","children":[{"name":"Enterprise Architecture","size":1520},{"name":"Service Oriented Architecture","size":1307},{"name":"Business Process Management","size":1912}]},{"name":"Corporate Banking & Smart Contracts","children":[{"name":"Corporate banking","size":1181},{"name":"Smart contracts","size":1047},{"name":"Blockchain","size":1645}]}]};
 
     // Calculate total nodes, max label length
     var totalNodes = 0;
@@ -44,8 +48,8 @@ treeJSON = d3.json("../data/corecourse.json", function(error, treeData) {
     var root;
 
     // size of the diagram
-    var viewerWidth = $(document).width();
-    var viewerHeight = $(document).height();
+    var viewerWidth = $(document).width()-200;
+    var viewerHeight = $(document).height()-200;
 
     var tree = d3.layout.tree()
         .size([viewerHeight, viewerWidth]);
@@ -332,7 +336,7 @@ treeJSON = d3.json("../data/corecourse.json", function(error, treeData) {
         scale = zoomListener.scale();
         x = -source.y0;
         y = -source.x0;
-        x = x * scale + viewerWidth / 2;
+        x = x * scale + viewerWidth / 4;
         y = y * scale + viewerHeight / 2;
         d3.select('g').transition()
             .duration(duration)

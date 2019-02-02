@@ -915,6 +915,7 @@
 					color: #a3a5a7;
 				}
 
+
 /* Header */
 
 	#skel-layers-wrapper {
@@ -926,7 +927,7 @@
 		color: #ffffff;
 		cursor: default;
 		height: 3em;
-		left: 0;
+		left: 0em;
 		line-height: 3em;
 		position: fixed;
 		top: 0;
@@ -1092,8 +1093,16 @@
 /* Footer */
 
 	#footer {
-		background: #f8f8f8;
-		padding: 4em 0 6em 0;
+
+		background: #061b3d;
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+
+		color: white;
+		text-align: center;
+
 	}
 
 		#footer a {
@@ -1102,7 +1111,7 @@
 
 		#footer .copyright {
 			color: #bbb;
-			font-size: 0.9em;
+			font-size: 1.5em;
 			margin: 2em 0 0 0;
 			padding: 0;
 			text-align: center;

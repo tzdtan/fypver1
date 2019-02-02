@@ -24,7 +24,8 @@ var tooltip = d3.select("body")
     .style("font", "12px sans-serif")
     .text("tooltip");
 
-d3.json("../data/forbubble.json", function(error, root) {
+d3.json("", function(error, root) {
+    root ={"name":"Financial technology","children":[{"name":"Retail Banking & Mobile Technology","children":[{"name":"Emerging FinTech trends","size":1253},{"name":"Retail banking","size":1448},{"name":"Channels","size":1150}]},{"name":"Financial Markets","children":[{"name":"Financial Market Products","size":1695},{"name":"Trade Lifecycle","size":1509},{"name":"Trading Strategies","size":1970}]},{"name":"Digital Payments & Innovation","children":[{"name":"Payment Instruments","size":1599},{"name":"Credit Card Networks","size":1101},{"name":"Clearing and Settlement","size":1376}]},{"name":"Digital Banking Enterprise Architecture #","children":[{"name":"Enterprise Architecture","size":1520},{"name":"Service Oriented Architecture","size":1307},{"name":"Business Process Management","size":1912}]},{"name":"Corporate Banking & Smart Contracts","children":[{"name":"Corporate banking","size":1181},{"name":"Smart contracts","size":1047},{"name":"Blockchain","size":1645}]}]};
     var node = svg.selectAll(".node")
         .data(bubble.nodes(classes(root))
             .filter(function(d) { return !d.children; }))
